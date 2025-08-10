@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sakura Test
 
-## Getting Started
+## Соответствие требованиям задания
+## Данные
+1. Создан массив из 100 объектов с данными с требуемыми полями (data/employees.ts)
+2. Написан API Endoint Next js, возвращающий эти данные по запросу с клиента (app/api/employees/route.ts)
 
-First, run the development server:
+## Функционал
+1. Создана таблица с колонками всех необходимых полей(components/EmployeeTable.tsx)
+   ![Image alt](https://github.com/vMaxiMv/Sakura-Test/blob/main/public/1.jpg)
+3. Написан хук для сортировки по клику на заголовок столбца
+   ![Image alt](https://github.com/vMaxiMv/Sakura-Test/blob/main/public/1.jpg)
+5. Написан хук для фильтрации по полю department с выпадающим списком всех отделов
+   ![Image alt](https://github.com/vMaxiMv/Sakura-Test/blob/main/public/8.jpg)
+7. Добавлен хук с поиском сотрудника по имени с задеркжй в 300мс, выполненный при помощи useDebounce
+   ![Image alt](https://github.com/vMaxiMv/Sakura-Test/blob/main/public/3.jpg)
+9. Адаптивная верстка добавлена
+    ![Image alt](https://github.com/vMaxiMv/Sakura-Test/blob/main/public/5.jpg)
+    ![Image alt](https://github.com/vMaxiMv/Sakura-Test/blob/main/public/6.jpg)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Технологии
+* React 19 версии
+* Tailwind css
+* Next js
+* Untitled UI
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Архитектура
+1. Выполнено разделение на компоненты (FilterSelect, TableControls, SearchInput, PaginationCardMinimal)
+2. Созданы кастомные хуки для фильтрации, сортировки и поиска (hooks/...)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Дополнительно
+* Для оптимизации рендеров добавлены хуки useMemo
+* Компонент протестирован визуально и интерактивно в Storybook
+  ![Image alt](https://github.com/vMaxiMv/Sakura-Test/blob/main/public/8.jpg)
+* Jest тесты. Проверяют рендеринг всех опций фильтрации, вызов onChange при выборе значений и обновление селектов
+  ![Image alt](https://github.com/vMaxiMv/Sakura-Test/blob/main/public/7.jpg)
+  
