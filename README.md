@@ -6,7 +6,6 @@
 git clone ...
 npm install
 npm run dev
-
 ```
 Моя версия node js: 23.11.0
 
@@ -19,16 +18,21 @@ npm run dev
 1. Создана таблица с колонками всех необходимых полей(components/EmployeeTable.tsx)
    ![Image alt](https://github.com/vMaxiMv/Sakura-Test/blob/main/public/1.jpg)
    рис 1 - скрин таблицы на десктопе
-2. Написан хук для сортировки по клику на заголовок столбца
+   
+3. Написан хук для сортировки по клику на заголовок столбца
    ![Image alt](https://github.com/vMaxiMv/Sakura-Test/blob/main/public/2.jpg)
    рис 2 - скрин демонстрации фильтрации по одному из отделов
-3. Написан хук для фильтрации по полю department с выпадающим списком всех отделов
+   
+5. Написан хук для фильтрации по полю department с выпадающим списком всех отделов
    ![Image alt](https://github.com/vMaxiMv/Sakura-Test/blob/main/public/8.jpg)
    рис 3 - скрин выпадающего списка в select (из Storybook)
-4. Добавлен хук с поиском сотрудника по имени с задержкой в 300мс, выполненный при помощи useDebounce
+   
+7. Добавлен хук с поиском сотрудника по имени с задержкой в 300мс, выполненный при помощи useDebounce
    ![Image alt](https://github.com/vMaxiMv/Sakura-Test/blob/main/public/3.jpg)
    рис 4 - скрин поиска сотрудника по имени
-5. Адаптивная верстка добавлена
+   
+9. Адаптивная верстка добавлена
+   
     ![Image alt](https://github.com/vMaxiMv/Sakura-Test/blob/main/public/5.jpg)
     ![Image alt](https://github.com/vMaxiMv/Sakura-Test/blob/main/public/6.jpg)
    рис 5 - скрин таблицы на мобильном устройстве
@@ -78,6 +82,9 @@ export function FilterSelect({
 * Для оптимизации рендеров добавлены хуки useMemo
 * Компонент протестирован визуально и интерактивно в Storybook
   ![Image alt](https://github.com/vMaxiMv/Sakura-Test/blob/main/public/8.jpg)
+  рис 6 - скрин из Storybook с демонстрацией компонента FilterSelect
+  
 * Jest тесты. Проверяют рендеринг всех опций фильтрации, вызов onChange при выборе значений и обновление селектов
   ![Image alt](https://github.com/vMaxiMv/Sakura-Test/blob/main/public/7.jpg)
+  рис 7 - скрин результатов тестирования
   
