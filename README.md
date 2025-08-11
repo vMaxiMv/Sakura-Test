@@ -35,6 +35,7 @@ npm run dev
    
     ![Image alt](https://github.com/vMaxiMv/Sakura-Test/blob/main/public/5.jpg)
     ![Image alt](https://github.com/vMaxiMv/Sakura-Test/blob/main/public/6.jpg)
+   
    рис 5 - скрин таблицы на мобильном устройстве
 
 ## Технологии
@@ -86,5 +87,6 @@ export function FilterSelect({
   
 * Jest тесты. Проверяют рендеринг всех опций фильтрации, вызов onChange при выборе значений и обновление селектов
   ![Image alt](https://github.com/vMaxiMv/Sakura-Test/blob/main/public/7.jpg)
+  
   рис 7 - скрин результатов тестирования
   
